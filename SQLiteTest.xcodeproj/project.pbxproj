@@ -16,6 +16,8 @@
 		2BA6E39324EFAC7B00036C7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6E39224EFAC7B00036C7B /* main.m */; };
 		2BA6E39D24EFAC7B00036C7B /* SQLiteTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6E39C24EFAC7B00036C7B /* SQLiteTestTests.m */; };
 		2BA6E3A824EFAC7B00036C7B /* SQLiteTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6E3A724EFAC7B00036C7B /* SQLiteTestUITests.m */; };
+		2BA6E3B724EFAD3B00036C7B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA6E3B624EFAD3B00036C7B /* libsqlite3.0.tbd */; };
+		2BA6E3BA24F0C3A600036C7B /* DBDatebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6E3B924F0C3A600036C7B /* DBDatebase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		2BA6E3A324EFAC7B00036C7B /* SQLiteTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA6E3A724EFAC7B00036C7B /* SQLiteTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteTestUITests.m; sourceTree = "<group>"; };
 		2BA6E3A924EFAC7B00036C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA6E3B624EFAD3B00036C7B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2BA6E3B824F0C3A600036C7B /* DBDatebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDatebase.h; sourceTree = "<group>"; };
+		2BA6E3B924F0C3A600036C7B /* DBDatebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDatebase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA6E3B724EFAD3B00036C7B /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				2BA6E39B24EFAC7B00036C7B /* SQLiteTestTests */,
 				2BA6E3A624EFAC7B00036C7B /* SQLiteTestUITests */,
 				2BA6E37E24EFAC7A00036C7B /* Products */,
+				2BA6E3B524EFAD3B00036C7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,8 @@
 				2BA6E38424EFAC7A00036C7B /* SceneDelegate.m */,
 				2BA6E38624EFAC7A00036C7B /* ViewController.h */,
 				2BA6E38724EFAC7A00036C7B /* ViewController.m */,
+				2BA6E3B824F0C3A600036C7B /* DBDatebase.h */,
+				2BA6E3B924F0C3A600036C7B /* DBDatebase.m */,
 				2BA6E38924EFAC7A00036C7B /* Main.storyboard */,
 				2BA6E38C24EFAC7B00036C7B /* Assets.xcassets */,
 				2BA6E38E24EFAC7B00036C7B /* LaunchScreen.storyboard */,
@@ -135,6 +144,14 @@
 				2BA6E3A924EFAC7B00036C7B /* Info.plist */,
 			);
 			path = SQLiteTestUITests;
+			sourceTree = "<group>";
+		};
+		2BA6E3B524EFAD3B00036C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6E3B624EFAD3B00036C7B /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA6E38824EFAC7A00036C7B /* ViewController.m in Sources */,
+				2BA6E3BA24F0C3A600036C7B /* DBDatebase.m in Sources */,
 				2BA6E38224EFAC7A00036C7B /* AppDelegate.m in Sources */,
 				2BA6E39324EFAC7B00036C7B /* main.m in Sources */,
 				2BA6E38524EFAC7A00036C7B /* SceneDelegate.m in Sources */,
@@ -440,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6DERJ4N54;
 				INFOPLIST_FILE = SQLiteTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6DERJ4N54;
 				INFOPLIST_FILE = SQLiteTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
