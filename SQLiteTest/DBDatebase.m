@@ -198,6 +198,5 @@
         }
         sqlite3_close(db);
     }
-    
 }
 @end
